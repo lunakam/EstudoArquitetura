@@ -1,0 +1,118 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3596413026,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.setUp()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login",
+        "description": "",
+        "id": "login-user;login",
+        "after": [
+          {
+            "result": {
+              "duration": 108069807,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginSteps.byeBye()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 94241890,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have accessed the site",
+            "match": {
+              "location": "LoginSteps.i_have_accessed_the_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 79347872,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I type \"tomsmith\" in email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "tomsmith",
+                  "offset": 8
+                }
+              ],
+              "location": "LoginSteps.iTypeInEmailField(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88746067,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I type \"password\" in password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "password",
+                  "offset": 8
+                }
+              ],
+              "location": "LoginSteps.iTypeInPasswordField(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 656257633,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click \u0027Login\u0027",
+            "match": {
+              "location": "LoginSteps.i_click_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Secure Area]\u003e but was:\u003c[This is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat io.github.lunakam.estudoarquitetura.pageObjects.LoginPage.secureAreaMessage(LoginPage.java:36)\n\tat io.github.lunakam.estudoarquitetura.stepsDefinition.LoginSteps.i_should_be_redirect_to_the_secure_area(LoginSteps.java:49)\n\tat ✽.I should be redirect to the secure area(src/test/resources/features/login.feature:8)\n",
+              "duration": 18061402,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "I should be redirect to the secure area",
+            "match": {
+              "location": "LoginSteps.i_should_be_redirect_to_the_secure_area()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login user",
+    "description": "",
+    "id": "login-user",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/login.feature",
+    "tags": []
+  }
+]

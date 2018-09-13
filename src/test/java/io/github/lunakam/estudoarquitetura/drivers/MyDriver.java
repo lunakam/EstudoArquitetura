@@ -1,9 +1,14 @@
 package io.github.lunakam.estudoarquitetura.drivers;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.json.Json;
 
+import java.net.URL;
+import java.util.Arrays;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class MyDriver {
@@ -17,7 +22,11 @@ public class MyDriver {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
+    //insert values of the json file in the fields
+//-------------------------------------------------------------------------------------------------------------------------
+
     public static WebElement findElementId(String elementId) {
+
         return driver.findElement(By.id(elementId));
     }
 

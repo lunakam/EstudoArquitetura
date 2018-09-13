@@ -33,7 +33,7 @@ public class LoginPage {
     }
 
     public void secureAreaMessage() {
-        Assert.assertEquals("Secure Area", MyDriver.findElementClassName("example").getAttribute("innerText").split("\n")[0]);
+        Assert.assertEquals("Secure Area", MyDriver.findElementClassName("example").getAttribute("innerText").split("\n")[1]);
     }
 
 
