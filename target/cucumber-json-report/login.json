@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 3549335900,
+              "duration": 3866889080,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 127235559,
+              "duration": 112291506,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 132427978,
+              "duration": 126059804,
               "status": "passed"
             },
             "line": 4,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 86207350,
+              "duration": 78394055,
               "status": "passed"
             },
             "line": 5,
@@ -64,26 +64,16 @@
           },
           {
             "result": {
-              "duration": 91226605,
-              "status": "passed"
+              "status": "undefined"
             },
             "line": 6,
             "name": "I type \"password\" in password field",
-            "match": {
-              "arguments": [
-                {
-                  "val": "password",
-                  "offset": 8
-                }
-              ],
-              "location": "LoginSteps.iTypeInPasswordField(String)"
-            },
+            "match": {},
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 686030288,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "I click \u0027Login\u0027",
@@ -94,9 +84,7 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c[Secure Area]\u003e but was:\u003c[This is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.]\u003e\n\tat org.junit.Assert.assertEquals(Assert.java:115)\n\tat org.junit.Assert.assertEquals(Assert.java:144)\n\tat io.github.lunakam.estudoarquitetura.pageObjects.LoginPage.secureAreaMessage(LoginPage.java:36)\n\tat io.github.lunakam.estudoarquitetura.stepsDefinition.LoginSteps.i_should_be_redirect_to_the_secure_area(LoginSteps.java:49)\n\tat ✽.I should be redirect to the secure area(src/test/resources/features/login.feature:8)\n",
-              "duration": 16622681,
-              "status": "failed"
+              "status": "skipped"
             },
             "line": 8,
             "name": "I should be redirect to the secure area",

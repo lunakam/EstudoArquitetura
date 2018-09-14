@@ -34,7 +34,7 @@ public class LoginSteps {
         loginPage.fillUsername(username);
     }
 
-    @And("^I type \"([^\"]*)\" in password field$")
+    @And("^I type {string} in password field$")
     public void iTypeInPasswordField(String password) {
         loginPage.fillPassword(password);
     }

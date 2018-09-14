@@ -31,7 +31,7 @@ public class WebDriverContext {
                 .ignoring(Exception.class);
 
         webDriver.manage().deleteAllCookies();
-        webDriver.get("https://hmg-free-webadmin.ns2online.com.br/");
+        webDriver.get("https://the-internet.herokuapp.com/login");
     }
 
     public void finalize() {
