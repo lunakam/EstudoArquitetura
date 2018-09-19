@@ -2,10 +2,15 @@ package io.github.lunakam.estudoarquitetura.pageObjects;
 
 import io.github.lunakam.estudoarquitetura.drivers.MyDriver;
 import org.junit.Assert;
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 
 public class LoginPage {
+    @FindBy(id="username")
+    private WebElement username;
+
+
     public void fillUsername(String username) {
         MyDriver.clearField("username");
         MyDriver.sendKeys("username", username);

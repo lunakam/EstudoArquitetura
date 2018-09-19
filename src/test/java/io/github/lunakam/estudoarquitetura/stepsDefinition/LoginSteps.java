@@ -1,5 +1,6 @@
 package io.github.lunakam.estudoarquitetura.stepsDefinition;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
@@ -49,5 +50,13 @@ public class LoginSteps {
         loginPage.secureAreaMessage();
     }
 
+    @Then("^I should see an error message$")
+    public void iShouldSeeAnErrorMessage() {
+
+    }
+
+    @And("^I shouldn't see the page redirect$")
+    public void iShouldnTSeeThePageRedirect() {
+    }
 }
 
