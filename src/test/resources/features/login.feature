@@ -9,7 +9,7 @@ Feature: Login user
 
   Scenario: Insert wrong password
     Given I have accessed the site
-    When   I type "tomsmith" in email field
+    When I type "tomsmith" in email field
     And I type "password" in password field
     And I click 'Login'
     Then I should see an error message

@@ -7,14 +7,14 @@ Feature: Login user
     And I click 'Login'
     Then I should be redirect to the secure area
 
-#  Scenario: Insert wrong password
-#    Given I have accessed the site
-#    When  I type a valid email in email field
-#    And I type an invalid password in password field
-#    And I click 'Continue'
-#    Then I should see an error message
-#    And I shouldn't see the page redirect
-#
+  Scenario: Insert wrong password
+    Given I have accessed the site
+    When I type "tomsmith" in email field
+    And I type "password" in password field
+    And I click 'Login'
+    Then I should see an error message
+    And I shouldn't see the page redirect
+
 #  Scenario: Insert wrong email
 #    Given I have accessed the site
 #    When I type an invalid email in email field
